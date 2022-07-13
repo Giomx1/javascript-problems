@@ -16,7 +16,7 @@ will be looped
 */
 function findTheLongestWord(string){
   let longestWord = "";
-  const arrayOfWords = string.split(" ");
+  const arrayOfWords = string.toLowerCase().split(" ");
   
   for(let i = 0; i < arrayOfWords.length; i++) {
     if (arrayOfWords[i].length > longestWord.length) {
@@ -50,7 +50,7 @@ removed the brack notation the function finally worked.
 function howManyVowels(string) {
   const arrayOfVowels = ["a","e","i","o","u"];
   let vowelCount = 0;
-  const arrayOfLetters = string.split("");
+  const arrayOfLetters = string.toLowerCase().split("");
   
   for(let i = 0; i < arrayOfLetters.length; i++) {
     if (arrayOfVowels.includes(arrayOfLetters[i])) {
