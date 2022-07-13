@@ -24,7 +24,7 @@
 /*
  in my solution I grabbed the p element which contains the button element. And I stored in a variable called tag.
   I accessed the element by tag using document.getElementsByTagName()
-  After the variable I used a for loop to loop through tag.length and in my code blocks i did tag index I, style method and 
+  After the variable I used a for loop to loop through tag.length and in my code blocks i did tag index I, style property and 
   set the backgroundColor to red. While I only have one p element this method still worked.
   */
 const tag = document.getElementsByTagName("p")
@@ -33,7 +33,7 @@ for(let i = 0; i < tag.length; i++) {
 }
 //2nd solution
 /*
-For this one I removed the for loop and only used tag at index 0, style method and changed the background color to red.
+For this one I removed the for loop and only used tag at index 0, style property and changed the background color to red.
 */
 const tag = document.getElementsByTagName("p")
   tag[0].style.backgroundColor = "red"
