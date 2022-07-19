@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <script src="myscripts.js"></script>
+  <title>JS Bin</title>
+</head>
+<body>
+<p for="membership">Choose a membership plan:</p>
+  <select onchange= "myFunction()" name="membership" id="mySelect">
+    <option value="free">Free</option>
+    <option value="bronze">Bronze</option>  
+    <option value="silver">Silver</option>  
+    <option value="Gold">Gold</option>
+  </select> 
+  <p id ="p1"></p>
+</body>
+</html>
+<!--Here I have a drop down menu and within the select element 
+I have an onchange event for my function and added an id for the select element and bottom p element.
+I added another P element at the bottom because I noticed if I use it at the top p element the words
+"Choose a membership plan:" would be replaced when the function executes.-->
