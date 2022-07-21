@@ -1,12 +1,14 @@
 function myFunction() {
   const gymOptions = document.getElementById("mySelect");
-  const numOfOptions = document.getElementById("mySelect").length
+  const numOfOptions = gymOptions.length;
+  console.log(numOfOptions);
  
   let txt = "";
   for (let i = 0; i < gymOptions.length; i++) {
-    txt = txt + gymOptions.options[i].text + "- "
+    txt = txt + gymOptions.options[i].text + " - "
   }
-      document.getElementById("p1").innerHTML = txt;
+      document.getElementById("p1").innerHTML = txt + numOfOptions;
+
 }
 /*
 Here I return to the function I named in my index.html. 
