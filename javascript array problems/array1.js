@@ -8,6 +8,6 @@ function getIt(array,num){ // here my variable getIt is the function which has t
     return "number must be 1 or greater";
   if (num > array.length) // number cannot exceed our array length of 5
     return "number must not exceed " + array.length
-    return array.slice(0, num)//returns a copy of my array where index 0 is the start and num is the end
+    console.log(array.slice(0, num));//logs a copy of my array where index 0 is the start and num is the end
 }
  console.log(getIt(gameSystems,3); // Here I invoke my function and return my first two elememts of the gameSystems array. 
