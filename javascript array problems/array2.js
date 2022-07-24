@@ -19,3 +19,4 @@ console.log(cars);//printing cars to console. Thinking it would print a string, 
 /*
 I thought this would work because when I used something like the pop method I got the
 result I expected but not with the join method. 
+*/
