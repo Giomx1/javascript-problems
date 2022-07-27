@@ -1,17 +1,13 @@
-function removeDuplicates(arr) {//function with parameter of arr
-    let uniqueArray = [];// new variable equal to empty array
+const myNumbers = [1,1,1,2,2,2,2,2,33];//array of numbers with duplicates
 
-    for(let i = 0; i < arr.length; i++) {// looping through my array
-        if(!uniqueArray.includes(arr[i])) {// if statement: if variable uniqueArray is not included at arr index i
-                                          //then push 
-
-
-            uniqueArray.push(arr[i]);
-        };
-    };
-    return uniqueValuesArray;
-};
-
-
-const myNumbers = [1, 2, 2, 4, 5, 4, 7, 8, 7, 3, 6]
-console.log(removeDuplicates(myNumbers));
+function removeDuplicates(array) {//function with variable removeDuplicates with parameter of array
+  let uniqueArray = [];// 
+  
+  for (let i = 0; i < array.length; i++) {//looping through array
+    if(!uniqueArray.includes(array[i])) {//if statement 
+      uniqueArray.push(array[i]);
+    }
+  }
+  return uniqueArray;//I return this variable because I want the value of this to be returned when the function is called.
+}
+console.log(removeDuplicates(myNumbers));// printing my results of removed duplicates
