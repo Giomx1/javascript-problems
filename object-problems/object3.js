@@ -10,4 +10,4 @@ function lengthOfObject (object) {// my function with one parameter
   return Object.keys(object).length// here I return the value I want which is using the keys method on my object which returns an array of my items in my object 
                                     //and the length method tells me how many items are in the array.
 }
-console.log(lengthOfObject(gameSystem));// Here I invoke my function 
+console.log(lengthOfObject(gameSystem));// Here I invoke my function which gives me a number
